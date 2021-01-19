@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+.grid-item {
+  height: 200px;
+  border: 1px solid #000;
+}
