@@ -17,10 +17,16 @@
     <div class="grid-border mb-small">
       <h1 class="fixed-header">Etch A Sketch</h1>
 
-      <div class="grid"></div>
+      <div class="grid js-grid"></div>
     </div>
+
+    <form class="dimensions mb-small js-dimensions-form">
+      <div>Width: <input class="js-width" type="number" value="100" min="50" max="100"></div>
+      <div>Height: <input class="js-height" type="number" value="100" min="50" max="100"></div>
+      <button class="btn">Set Dimensions</button>
+    </form>
     
-    <button class="btn js-reset">Reset Sketch Grid</button>
+    <button class="btn js-reset">Clear Sketch Grid</button>
 
   </div>
   

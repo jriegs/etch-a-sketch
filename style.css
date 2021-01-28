@@ -1,5 +1,10 @@
+html {
+  font-size: 62.5%;
+}
+
 h1 {
   font-family: 'Aladin', cursive;
+  font-size: 3rem;
   color: rgba(227, 178, 60, .8);
   line-height: 2rem;
   margin: 0;
@@ -8,7 +13,7 @@ h1 {
 
 .fixed-header {
   position: absolute;
-  top: 1rem;
+  top: 2rem;
   left: 0;
   right: 0;
 }
@@ -21,7 +26,7 @@ h1 {
 .grid-border {
   background: rgb(220,66,33);
   border-radius: 10px;
-  padding: 4rem 3rem 6rem;
+  padding: 6rem 4rem 10rem;
 
   position: relative;
 }
@@ -30,13 +35,13 @@ h1 {
 .grid-border::after {
   content: '';
   display: block;
-  height: 4rem;
-  width: 4rem;
+  height: 6rem;
+  width: 6rem;
   background: #f1f1f1;
   border-radius: 50%;
 
   position: absolute;
-  bottom: 1rem;
+  bottom: 2rem;
 }
 
 .grid-border::before {
@@ -49,17 +54,36 @@ h1 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(100, 1fr);
+
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .grid-item {
   background: #fff;
-  height: 150px;
+  height: 5px;
 }
 
 .bg-hover {
   background: #000;
   transition: background 0.3s;
+}
+
+.dimensions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 1.6rem;
+}
+
+.dimensions > div {
+  margin-right: 2rem;
+}
+
+.dimensions input {
+  width: 5rem;
 }
 
 .btn {
